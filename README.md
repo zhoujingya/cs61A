@@ -4,6 +4,8 @@
 
 * https://web.archive.org/web/20210104105406/https://cs61a.org/
 
+* https://www.composingprograms.com/
+
 
 ## 01-start
 
@@ -11,3 +13,4 @@ Too basic, just ignore
 
 ## [02-functions](src/02-functions/README.md)
 
+## [03-high-order-recurse](src/03-highorder-func/README.md)
