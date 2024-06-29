@@ -13,7 +13,8 @@
         "debugging-quiz",
         "falling",
         "divisible_by_k",
-        "sum_digits"
+        "sum_digits",
+        "if-statements"
     ],
     "protocols": [
         "restore",
