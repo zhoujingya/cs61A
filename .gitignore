@@ -2,3 +2,6 @@
 **/*/__pycache__
 */.DS_Store
 .DS_Store
+**/*/.ok_history
+**/*/.ok_messages
+**/*/.ok_storage.db
