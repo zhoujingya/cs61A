@@ -144,7 +144,7 @@ test = {
           'question': 'Which of the following is NOT true?'
         }
       ],
-      'scored': False,
+      'scored': True,
       'type': 'concept'
     }
   ]

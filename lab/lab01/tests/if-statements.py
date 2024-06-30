@@ -44,7 +44,7 @@ test = {
           'multiline': False
         }
       ],
-      'scored': False,
+      'scored': True,
       'type': 'wwpp'
     }
   ]
