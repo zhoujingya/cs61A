@@ -109,16 +109,20 @@ def cycle(f1, f2, f3):
     """
     "*** YOUR CODE HERE ***"
     def res(x):
-        def tmp(y):
-            if( x == 0):
-                return y
-            elif( x == 1):
-                return f1(y)
-            elif(x == 2):
-                return f2(f1(y))
-            elif(x == 3):
-                return f3(f2(f1(y)))
-            else:
-                
-        return tmp
+        def tmp1(y):
+            tmp = y
+            nonlocal x
+            while( x >= 0 ): # iterate every three number
+                if( x == 0):
+                    return tmp
+                elif( x == 1):
+                    return f1(tmp)
+                elif(x == 2):
+                    return f2(f1(tmp))
+                elif(x == 3):
+                    return f3(f2(f1(tmp)))
+                else:
+                    tmp = f3(f2(f1(tmp)))
+                    x -= 3
+        return tmp1
     return res
