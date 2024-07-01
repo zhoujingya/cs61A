@@ -23,6 +23,19 @@ def roll_dice(num_rolls, dice=six_sided):
     # BEGIN PROBLEM 1
     "*** YOUR CODE HERE ***"
     # END PROBLEM 1
+    # 需要循环num_rolls次数， 如果dic[i] == 0, 那么每次计算结果都是1，每次迭代的次数都需要计算到six_sized中\
+    sum = 0
+    for i in range(num_rolls):
+        tmp = dice()
+        if tmp == 1:
+            for j in range(i+1, num_rolls):
+                dice()
+            sum = 1
+            break
+        else:
+            sum += tmp
+    return sum
+    
 
 
 def boar_brawl(player_score, opponent_score):

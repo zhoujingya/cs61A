@@ -46,7 +46,7 @@ test = {
           'question': 'Which of the following is the correct way to "roll" a fair, six-sided die?'
         }
       ],
-      'scored': False,
+      'scored': True,
       'type': 'concept'
     }
   ]

@@ -10,3 +10,35 @@
 
 - [ ] Github workflow
 
+## Important concepts
+
+### Closure 
+
+* https://pythontutor.com/cp/composingprograms.html#mode=display
+
+
+```py
+
+def add(a, b):
+    tmp = 123
+    def closure():
+        nonlocal 
+        tmp += 1
+        return a+b
+    return closure
+    
+test = add(1,2)
+test()
+test()
+```
+* [TS playground](https://www.typescriptlang.org/play/?#code/PTAEHUFMBsGMHsC2lQBd5oBYoCoE8AHSAZVgCcBLA1UABWgEM8BzM+AVwDsATAGiwoBnUENANQAd0gAjQRVSQAUCEmYKsTKGYUAbpGF4OY0BoadYKdJMoL+gzAzIoz3UNEiPOofEVKVqAHSKymAAmkYI7NCuqGqcANag8ABmIjQUXrFOKBJMggBcISGgoAC0oACCbvCwDKgU8JkY7p7ehCTkVDQS2E6gnPCxGcwmZqDSTgzxxWWVoASMFmgYkAAeRJTInN3ymj4d-jSCeNsMq-wuoPaOltigAKoASgAywhK7SbGQZIIz5VWCFzSeCrZagNYbChbHaxUDcCjJZLfSDbExIAgUdxkUBIursJzCFJtXydajBBCcQQ0MwAUVWDEQC0gADVHBQGNJ3KAALygABEAAkYNAMOB4GRonzFBTBPB3AERcwABS0+mM9ysygc9wASmCKhwzQ8ZC8iHFzmB7BoXzcZmY7AYzEg-Fg0HUiQ58D0Ii8fLpDKZgj5SWxfPADlQAHJhAA5SASPlBFQAeS+ZHegmdWkgR1QjgUrmkeFATjNOmGWH0KAQiGhwkuNok4uiIgMHGxCyYrA4PCCJSAA)
+
+```ts
+function createMultiplier<T extends any>(multiplier: T) {
+    return (input: T) => input * multiplier;
+}
+
+const double = createMultiplier<number>(2);
+console.log(double(104)); // Outputs: 10
+
+```
